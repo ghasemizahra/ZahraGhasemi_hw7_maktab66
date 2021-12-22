@@ -1,0 +1,184 @@
+@font-face {
+    font-family: 'Roboto';
+    src: url(./assest/fonts/Roboto-Light.ttf);
+}
+@font-face {
+    font-family: 'share';
+    src: url(./assest/fonts/Share-Bold.ttf);
+}
+
+body{
+    background-color: black;
+}
+
+.title{
+    display: flex;
+margin-top: 5%;
+margin-left: 25%;
+justify-content: space-between;
+
+}
+.txt{
+    color: white;
+    font-family: 'Kolker Brush','Open Sans','Roboto Condensed:wght@300','Source Code Pro:ital wght@0 300;0 400;1 200;1 300','Ubuntu Mono,',;
+font-size: 40px;
+}
+.img1{
+    width: 5%;
+    height: 5%;
+    margin-top: 5%;
+    flex-basis: 88%;
+}
+.txt1{
+    color: white;
+    font-family: 'Kolker Brush','Open Sans','Roboto Condensed:wght@300','Source Code Pro:ital wght@0 300;0 400;1 200;1 300','Ubuntu Mono,',;
+font-size: 1.5rem;
+}
+.paragraph{
+font-family: 'Roboto';
+/* font-family: 'Kolker Brush','Open Sans','Roboto Condensed:wght@300','Roboto:wght@100','Source Code Pro:ital,wght@0,300;0,400;1,200;1,300','Ubuntu Mono' */
+font-size: 5px;
+/* flex-basis: 69%; */
+margin-left: 5%;
+
+
+}
+.txtimg{
+    display: flex;
+
+    /* justify-content: space-between; */
+
+
+
+}
+.img{
+    width: 5%;
+
+margin-top: 6%;
+    align-items: center;
+     /* flex-basis: 30%; */
+margin-left: 15%; 
+border-radius: 3px;/*چرا کارنمیکنه*/
+
+
+}
+hr{
+    width: 80%;
+/* color:red;این چرا اعمال نمیشه */
+    margin-top: 10%;
+}
+.txt2{
+    color: white;
+    margin-top:12%;
+    text-align: center;
+   
+}
+.txt3{
+    color: white;
+    margin-top:12%;
+    text-align: center;
+   
+}
+.pp{
+    font-family: 'Roboto';
+
+}
+.ss{
+    color: red;
+    background-color: red;
+    font-size: large;
+}
+.Box{
+    display: flex;
+   
+    /* position: relative; */
+        
+        justify-content: flex-start;
+        flex-direction: row;
+        /* align-items: center; */
+      margin-top: 5%;
+      margin-left: 1%;
+
+}
+.relative{
+flex-basis: 30%;
+ position: relative;
+
+}
+.imgimgresponsive{
+   margin-left: 0%;
+        width: 100%;
+        height: 70vh;
+        object-fit: cover;
+
+        
+    }
+
+
+.caption{
+
+    color: white;
+    position: absolute;
+/* bottom: 0;
+left: 0;
+right: 0;
+padding: 1px; */
+/* text-align: center; */
+margin-top: 20px;
+font-size: large;
+font-family: 'share';
+margin-left: 1px;
+
+}
+.txt3{
+    color: white;
+    font-family: 'Roboto';
+    margin-left: 1px;
+    text-align: left;
+}
+/*mobile2-------------*/
+@media screen and(min-width:320px),(max-width:960px) { 
+    .Box{
+        flex-direction: column;
+    }
+    
+}
+/*mobile1-------------*/
+@media screen and(min-width:320px),(max-width:960px) { 
+    .txtimg,.txtimg{
+        flex-direction: column;
+    }
+    
+}
+/* 
+@media screen and(max-height:200px) {
+    body{
+        background-color:red;
+    
+    }
+} */
+
+/* tablet2---------------- */
+@media screen and(max-width:768px) {
+    .Box{
+        display: flex;
+   flex-wrap: wrap;
+    /* position: relative; */
+        
+        justify-content: flex-start;
+        flex-direction: row;
+        /* align-items: center; */
+      margin-top: 5%;
+      margin-left: 1%;
+    }
+    .relative{
+        flex-shrink: 3;
+        flex-basis: 50%;
+    }
+}
+@media screen and(min-width:768px) {
+    
+}
+@media screen and(min-width:960px) {
+    
+}
