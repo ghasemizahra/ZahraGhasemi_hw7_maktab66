@@ -12,11 +12,11 @@ this.getfullcourse=function(){
 const soft=new Specifications("softEngineering",3,50)
 soft.book="data"//اضافه کردن
 soft.getfullcourse()//بخش الف
-console.log(soft)//بخش ب
+console.log(JSON.stringify(soft))//بخش ب
 const network=new Specifications("network",3,30)
 network.project=true
 network.getfullcourse()
-console.log(network)
+console.log(JSON.stringify(network))
 
 
 
